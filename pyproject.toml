@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sconl-calendarx"
+version = "0.1.0"
+description = "Equicycle time engine and CalendarX — calendar intelligence"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+api = ["fastapi>=0.100.0", "uvicorn[standard]>=0.20.0"]
+
+[project.scripts]
+equicycle = "sconl_calendar.equicycle:main"
+calendarx = "sconl_calendar.calendar_data:main"
