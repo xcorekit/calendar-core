@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# calendar-core/cli/bin/calendarx
+_CORE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/../../core/sconl_calendar"
+exec python3 "$_CORE/calendar_data.py" \
+    --calendar-file "${SCONL_CALENDAR_FILE:-${HOME}/.local/share/sconl/calendar.json}" \
+    --journal-dir   "${SCONL_JOURNAL_DIR:-${HOME}/.local/share/sconl/journal}" \
+    --regions       "${SCONL_CALENDAR_REGIONS:-KE,INT}" \
+    "$@"

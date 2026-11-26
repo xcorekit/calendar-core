@@ -1,0 +1,6 @@
+name: sconl_calendarx
+description: Equicycle time engine and CalendarX for Flutter/Dart
+version: 0.1.0
+repository: https://github.com/xcorekit/calendar-core
+environment:
+  sdk: ">=3.0.0 <4.0.0"
